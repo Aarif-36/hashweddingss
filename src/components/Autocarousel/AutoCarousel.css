@@ -1,0 +1,172 @@
+/* ==========================
+   Base Carousel Styles
+========================== */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  box-sizing: border-box;
+  padding: 40px 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  white-space: nowrap;
+}
+
+.card {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 320px;      /* desktop default */
+  height: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.card-body {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 90%;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.card.center {
+  transform: scale(1.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+
+/* 💻 Laptops (≤1024px) */
+@media (max-width: 1024px) {
+  .carousel {
+    padding: 30px 0;
+  }
+  .card {
+    width: 280px;
+  }
+  .card img {
+    height: 340px;
+  }
+  .card-body p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 📱 Tablets (≤768px) */
+@media (max-width: 768px) {
+  .carousel {
+    padding: 25px 0;
+  }
+
+  .carousel-track {
+    gap: 20px;
+  }
+
+  .card {
+    width: 240px;
+  }
+
+  .card img {
+    height: 280px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+/* 📲 Mobile (≤576px) */
+@media (max-width: 576px) {
+  .carousel {
+    padding: 20px 0;
+  }
+
+  .carousel-track {
+    gap: 16px;
+  }
+
+  .card {
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .card-body p {
+    font-size: 0.85rem;
+  }
+}
+
+/* 📱 Small Phones (≤450px) */
+@media (max-width: 450px) {
+  .carousel {
+    padding: 16px 0;
+  }
+
+  .carousel-track {
+    gap: 12px;
+  }
+
+  .card {
+    width: 100px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-body p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
