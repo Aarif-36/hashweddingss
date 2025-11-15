@@ -100,7 +100,7 @@ body.no-scroll {
   transition: color 0.3s ease;
   padding-left: 5%;
   padding-bottom: 5%;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
 }
 .sidebar-menu a:hover {
   color: #555;
@@ -121,6 +121,22 @@ body.no-scroll {
 .has-submenu .submenu a {
   font-size: 0.9rem;
 }
+
+.sidebar-overlay {
+  position: fixed;
+  inset: 0; /* covers entire screen */
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 99;
+}
+
+.sidebar-overlay.show {
+  opacity: 1;
+  pointer-events: auto; /* ✅ blocks clicks behind */
+}
+
 
 /* Responsive (Mobile) */
 @media (max-width: 768px) {
@@ -375,7 +391,7 @@ display: inline-block;
 
 /*----------------------------------------recent----------------------------*/
 .recent-gallery1 {
-  border: 1px gray solid;
+  border: 20px solid wheat;
   background-color: darkgray;
   border-radius: 0 ;
   padding-bottom: 2%;
@@ -409,13 +425,13 @@ display: inline-block;
   align-items: center;
 }
 .recent-footer {
-   background-color: darkgray;
-  color:#333;
+  background-color: darkgray;
+  color:wheat;
   font-size: 1.2rem;
   font-weight: 500;
   margin: 0 0 10% 0 ;
   padding: 12px 28px;
-  border: 1px solid black;
+  border: 1px solid wheat;
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -747,14 +763,12 @@ display: inline-block;
 }
 .gallery-header {
   display: flex;
-  background-color: #f7f7f7;
   align-items: center;
   justify-content:space-evenly; /* pushes left, center, right */
-  padding: 10% 5% 6%;
+  padding: 15% 5% 6%;
   position: relative;
 }
 
-/* Center title */
 .gall-title {
   text-align: center;
 }
@@ -783,7 +797,6 @@ display: inline-block;
   border-radius: 2px;
 }
 
-/* Nav button containers (left/right) */
 .gall-nav-btn {
   width: 50px;
   display: flex;
@@ -791,37 +804,14 @@ display: inline-block;
   align-items: center;
 }
 .gall-nav-btn .left,.gall-nav-btn .right{
-  padding: 1%;
   font-size: 1.5rem;
   text-decoration: none;
-  margin: 2% 0 0 0;
-  background-color: #f7f7f7;
+  margin: 3% 0 0 0;
+  transform: rotate(355deg);
 }
 .gall-nav-btn .left:hover,.gall-nav-btn .right:hover{
   color: black;
-  background-color: #f7f7f7;
 }
-
-
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .gallery-header {
-    padding: 10% 3% 4%;
-  }
-
-  .gall-title p {
-    font-size: 2rem;
-    letter-spacing: 4px;
-  }
-
-  .nav-btn {
-    font-size: 1rem;
-    padding: 10px 12px;
-  }
-}
-
-
 
 .grid-wrapper {
   display: grid;
@@ -830,7 +820,6 @@ display: inline-block;
   align-items: center;
 }
 
-/* 🎨 Image styles */
 .grid-wrapper img {
   width: 100%;
   height: 400px;
@@ -846,14 +835,12 @@ display: inline-block;
   filter: brightness(1);
 }
 
-/* ===================================== */
-/* 🌟 MAKE EVERY 7th IMAGE FULL WIDTH */
-/* ===================================== */
 /*
-Pattern explanation:
-- We have 6 normal images (2 rows × 3 images)
-- Then the 7th image becomes the large, full-width one.
+------------Pattern explanation:
+------------We have 6 normal images (2 rows × 3 images)
+------------Then the 7th image becomes the large, full-width one.
 */
+
 .grid-wrapper > div:nth-child(7n) {
   grid-column: span 3;
 }
@@ -863,19 +850,15 @@ Pattern explanation:
   object-fit: cover;
 }
 
-/* ===================================== */
-/* 📱 RESPONSIVE DESIGN */
-/* ===================================== */
 
-/* 💻 Large screens (≥1200px): 3 per row */
+/*=========================== gallery responsive design ==========================*/
+
 @media (min-width: 1200px) {
   .grid-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-
-/* 📱 Tablets (≥768px and <1200px): 2 per row */
 @media (max-width: 1199px) and (min-width: 768px) {
   .grid-wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -887,46 +870,21 @@ Pattern explanation:
     height: 280px;
   }
   .gall-title p {
-  font-size: 2rem;
+   font-size: 1.7rem;
    padding-top: 20%;
    padding-bottom: 2%;
    margin-bottom: 10%;
   }
   .gall-nav-btn .left,.gall-nav-btn .right{
-    margin-top: 4%;
+    margin-top: 2%;
   }
   .gallery-sec1{
     padding-bottom: 10%;
   }
-}
-
-/* 📲 Mobiles (<768px): 1 per row */
-@media (max-width: 767px) {
-  .grid-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-wrapper > div:nth-child(7n) {
-    grid-column: span 1;
-  }
-
-  .grid-wrapper img {
-    height: 250px;
-  }
-
-   .gall-title p {
-   padding-top: 30%;
-  }
-  .gall-nav-btn .left,.gall-nav-btn .right{
-    margin-top: 8%;
-  }
-}
-
-
-
+} 
 
 /* =====================================================================*/
-/*============================== Contact ========================*/
+/*================================= Contact ===========================*/
 /* ====================================================================== */
 
 .contact_sec1 {
@@ -940,10 +898,10 @@ Pattern explanation:
 }
 .contact-info{
   color: #333;
-  padding: 5% 0 0 0;
+  padding: 8% 0 0 0;
 }
 .contact-info .contact-item{
-  padding: 0 0 6% 0;
+  padding: 0 0 3% 0;
   font-size: 1.5rem;
   font-weight: 50;
 }
@@ -958,7 +916,7 @@ Pattern explanation:
   color: #333;
 }
 .contact-item p{
-  padding: 10% 0 5% 0;
+  padding: 5% 0 5% 0;
   letter-spacing: 5px;
 } 
 /* Right side - Google Form */
@@ -1054,7 +1012,7 @@ Pattern explanation:
   background-color: #fafafa;
   align-items: center;
   min-height: 100vh;
-  padding: 0 8%;
+  padding: 8% 8%;
   gap: 50px;
 }
 .story-content {
@@ -1281,8 +1239,8 @@ Pattern explanation:
 
 /* ======================= About =========================== */
 .about-title,.service-title{
-    font-size: 2rem;
-     letter-spacing: 5px;
+    font-size: 1.7rem;
+    letter-spacing: 5px;
     margin-bottom: 10%;
 }
 .about-text {
@@ -1319,7 +1277,7 @@ Pattern explanation:
    padding-bottom: 5%;
  }
    .story-content h1,.slide-in:nth-child(1){
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .slide-in:nth-child(2),.contact-item p{
     font-size: 1.2rem;
@@ -1490,7 +1448,6 @@ Pattern explanation:
  
 /*-----------------section proct2---------------*/
   
-  
   .proct2 h2{
     font-size:1.8rem ;
     letter-spacing: 5px;
@@ -1527,9 +1484,6 @@ Pattern explanation:
   }
 
 /*-------------------recent gallery--------------------*/
-
-  
-
   .home-btn{
     margin-bottom: 5%;
   }
@@ -1590,7 +1544,32 @@ Pattern explanation:
   }
 
 /*========================  gallery ================*/
- 
+  .gallery-header {
+   padding: 15% 5% 6%;
+  }
+  .gall-title p {
+    font-size: 1.7rem;
+    letter-spacing: 4px;
+    padding-top: 30%;
+  }
+  .nav-btn {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-wrapper > div:nth-child(7n) {
+    grid-column: span 1;
+  }
+
+  .grid-wrapper img {
+    height: 250px;
+  }
+  .gall-nav-btn .left,.gall-nav-btn .right{
+    margin-top: 6%;
+  }
 
 /*====================== contact and Stories =================*/
 .contact_sec1 {
@@ -1601,7 +1580,7 @@ Pattern explanation:
     padding: 0 5% 0 0;
   }
   .story-content h1,.slide-in:nth-child(1){
-    font-size: 2rem;
+   font-size: 1.7rem;
   }
  .story-content p,.slide-in:nth-child(2),.contact-item p{
     font-size: 1.3rem;
@@ -1657,7 +1636,7 @@ Pattern explanation:
   }
 .gallery-btn{
   font-size: 15px;
-  width: 190px;
+   width: 190px;
     padding: 12px 0;
 }
 }
@@ -1767,16 +1746,16 @@ Pattern explanation:
   }
 
 /* ================== Gallery ================== */
-.gallery-header{
+  .gallery-header{
   padding-top: 20%;
   padding-bottom: 10%;
-}
+  }
   .gall-title p {
   font-size: 1.5rem;
    padding-top: 30%;
   }
   .gall-nav-btn .left,.gall-nav-btn .right{
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
  /* ================= Contact and Story =============== */
@@ -1929,8 +1908,5 @@ Pattern explanation:
 
   /* ================= gallery ====================== */
 
-  .gall-nav-btn .left,.gall-nav-btn .right{
-    margin-top: 12%;
-  }
 }
 
