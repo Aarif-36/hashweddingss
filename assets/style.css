@@ -1,0 +1,1938 @@
+/* =========================================================================*/
+/*======================== fonts of day one in sanserif ====================*/
+/*==========================================================================*/
+.days-one-regular {
+    font-family: "Days One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+ .poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+.newsreader{
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.bonheur-royale-regular {
+    font-family: "Bonheur Royale", serif;
+    font-weight: 500;
+    font-size: 2rem;
+    font-style: normal;
+  } 
+
+.gruppo-regular {
+  font-family: "Gruppo", sans-serif;
+  font-style: normal;
+}
+
+.baskervville {
+  font-family: "Baskervville", serif;
+  font-style: normal;
+}
+
+  
+  
+*body{
+    margin: 0px !important;
+}
+
+/*==================================================================*/
+/* ========================== Sidebar styling ======================*/
+/*==================================================================*/
+body.no-scroll {
+  overflow: hidden;
+}
+.sidebar {
+  background-color: rgb(245, 244, 236);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%); 
+  height: 100%;
+  transition: transform 0.4s ease-in-out; 
+  display: flex;
+  flex-direction: column;
+  z-index: 2000;
+  width: 40%;
+}
+.sidebar.active {
+  transform: translateX(0);
+}
+.sidebar-header h2 {
+  display: none;
+}
+.sidebar-header {
+  padding: 1rem;
+  background-color: rgb(245, 244, 236);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.close-btn {
+  font-size: 2.5rem;
+  font-weight: 100;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding-right: 5%;
+}
+.sidebar-menu {
+  list-style: none;
+  padding: 1rem;
+  margin-top: 20px;
+}
+.sidebar-menu li {
+  margin: 1rem 0;
+}
+.sidebar-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  transition: color 0.3s ease;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  letter-spacing: 8px;
+}
+.sidebar-menu a:hover {
+  color: #555;
+}
+.menu1{
+  letter-spacing: 8px;
+}
+.has-submenu .submenu {
+  display: none;
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.has-submenu.active .submenu {
+  display: block;
+}
+
+.has-submenu .submenu a {
+  font-size: 0.9rem;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 300px; /* keep same logic */
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .sidebar-menu a {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+  .close-btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 200px; /* keep same logic */
+  }
+}
+
+/* ===================================================================== */
+/* ============================= Index ================================= */
+/* ===================================================================== */
+
+/*---------------------------------proct1--------------------------------*/
+.proct1{
+    background-image: url("images/img7.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    animation: change 30s infinite ease-in-out;
+}
+.droct1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(164, 164, 160);
+}
+.droct1 a:hover{
+   color: white;
+}
+.cols1{
+    text-align: center;
+    padding-top: 1%;
+    position: absolute;
+    left: 5%;
+}
+.cols1 a,.cols2 h1{
+    color: white;
+}
+.menu1{
+    padding-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+.info1{
+  font-size: 20px;
+  font-weight: 50;
+  line-height: 3rem;
+  letter-spacing: 2px;
+  padding-right: 20px;
+  color: white;
+}
+.info2{
+  line-height: 3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px ;
+  font-weight: 50;
+  color: azure;
+}
+.cont .row .col{
+padding-top: 40rem;
+border-right: 1px solid rgb(164, 164, 160);
+text-align: center;
+padding-bottom: 50px;
+}
+.cont .row .col a{
+text-decoration: none;
+}
+.cont .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+@keyframes change{
+   0% {
+    background-image: url("/images/img7.jpg");
+    }
+    20%{
+        background-image: url("../images/img8.jpg"); 
+    }
+    40%{
+        background-image: url("../images/img9.jpg"); 
+    }
+    60%{
+        background-image: url("../images/img10.jpg"); 
+    }
+    80%{
+        background-image: url("../images/img11.jpg"); 
+    }
+    100%{
+        background-image: url("../images/img10.jpg"); 
+    }
+}
+/*----------------------------------proct2-------------------------------*/
+.proct2{
+  background-color: #f7f7f7;
+  color: gray;
+  text-align: center;
+  padding:5rem 2rem 5rem 2rem;
+  line-height: 1rem;
+}
+.proct2 h2{
+  color: rgb(46, 45, 45);
+  font-size: 2rem;
+  font-weight: 50;
+  letter-spacing: 0.5rem;
+  padding-bottom: 1%;
+}
+.proct2 h5{
+  color: black;
+  font-size: 20px;
+  font-weight: 50;
+  letter-spacing: 2px;
+}
+/*---------------------------------proct3--------------------------------*/
+.conty > .row > .col{
+    padding: 0%;
+    border: none; 
+ }
+ .image img{
+     width: 100%;
+     height: 500px;
+     display: block;
+     margin: auto;   
+ }
+.image{
+     filter:brightness(50%);
+ }
+ .image:hover{
+     filter: brightness(100%);
+ }
+ .content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: lightyellow;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  opacity: 0;
+  transition: 1s;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.content:hover {
+  opacity: 1;
+}
+
+.passage {
+  padding: 0 10%;
+}
+
+.passage h4 {
+  color: rgb(46, 45, 45);
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 50;
+  letter-spacing: 5px;
+}
+
+.passage h6 {
+  color: rgb(46, 45, 45);
+  margin-top: 8px;
+  font-size: 4rem;
+  font-weight: 50;
+  letter-spacing: 10px;
+}
+/*---------------------------------proct3(1)-----------------------------*/
+.proct3-1{
+   padding: 10% 10% 10% 10%;
+}
+.couplestatus,.recent-gallery{
+  margin-bottom: 5%;
+  font-optical-sizing: auto;
+}
+.couplestatus h3{
+color: rgb(46, 45, 45);
+font-size: 4rem;
+font-weight:100;
+letter-spacing: 10px;
+}
+.couplestatus h1{
+color: rgb(46, 45, 45);
+font-size: 5rem;
+font-weight:50;
+letter-spacing: 10px;
+padding-bottom: 1%;
+position: relative;
+display: inline-block;
+}
+.couplestatus h1::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* underline starts from left */
+  width: 60px; /* underline length */
+  height: 3px; /* underline thickness */
+  background-color: rgb(46, 45, 45);
+  border-radius: 1px;
+}
+
+/*--------------------------------------proct4------------------------------*/
+.proct4 {
+  position: relative;
+  color: black;
+  background-image: url("../images/cimg4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: ellipse(80% 100% at 50% 0%);
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Move content to right */
+  align-items: flex-end;     /* Move content to bottom */
+  padding: 40px 80px;        /* Space from edges */
+  text-align: right;
+}
+.qoutes-title{
+  padding: 0px 5% 10% 0px;
+}
+
+.qoutes-title h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.qoutes-title h2 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/*----------------------------------------recent----------------------------*/
+.recent-gallery1 {
+  border: 1px gray solid;
+  background-color: darkgray;
+  border-radius: 0 ;
+  padding-bottom: 2%;
+  transform-origin: center;
+  text-align:left;
+}
+.recent-gallery p {
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 10px;
+  padding: 1% 1% 1% 0;
+  margin: 6% 30% 3% 0;
+  color: rgb(46, 45, 45);
+  position: relative;
+  display: inline-block;
+}
+.recent-gallery p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* underline starts from left */
+  width: 60px; /* underline length */
+  height: 3px; /* underline thickness */
+   background-color: rgb(46, 45, 45);
+  border-radius: 1px;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recent-footer {
+   background-color: darkgray;
+  color:#333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 10% 0 ;
+  padding: 12px 28px;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 6px;             
+}
+
+.recent-footer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/*--------------------------------meet the team-----------------------------*/
+
+/*---------------------------------site-footer---------------------------*/
+
+.site-footer {
+  background: #131414;
+  padding: 60px 0px;
+  font-family: Arial, sans-serif;
+  color: #bbb;
+}
+.footer-titles {
+  text-align: left;
+  margin: 0 auto 50px 15%;
+}
+.footer-title1 {
+  padding-bottom: 20px;
+}
+.footer-title1 h1 {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: #fff;
+}
+.footer-title2 h2 {
+  font-weight: 300;
+  letter-spacing: 5px;
+  color: #bbb;
+}
+.line hr {
+  width: 100%;
+  max-width: 1200px;
+  border: none;
+  height: 2px;
+  background-color: white;
+  margin-top: 20px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 150px;
+  padding-left: 15%;
+  margin: 0 auto;
+  text-align: left;
+}
+.footer-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.footer-box p,
+.footer-box a {
+  font-size: 1rem;
+  color: #bbb;
+  text-decoration: none;
+  line-height: 1.8;
+}
+.footer-box a:hover {
+  color: #fff;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.social-icons a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: #444;
+  color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+.social-icons a:hover {
+  background: rgb(201, 222, 215);
+  color: #3d3e3e;
+  transform: scale(1.1);
+}
+/* Footer bottom (optional) */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+ 
+}
+
+
+/*----------------------------button to top----------------------------*/
+
+.footer-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color:#333 ;
+  color:#f7f7f7;
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.footer-top-btn:hover {
+  transform: scale(1.1);
+  transform: rotate(90deg);
+}
+
+
+/* ================================================================== */
+/*============================== About ==============================*/
+/* ==================================================================  */
+.Navbar2-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.navbar-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.common-droct1 {
+  background-color: rgb(245, 244, 236);
+  display:flex;
+  justify-content: center;
+  padding: 20px;
+  position: fixed;   /* sticky won’t animate – use fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.50s ease-in-out;
+}
+/* Corrected */
+.common-droct1.hide {
+  transform: translateY(-100%);
+}
+.common-cols1{
+  text-align: center;
+  padding-top: 1%;
+  position: absolute;
+  left: 5%;
+}
+
+.about-section {
+  padding: 150px 10% 100px 10%;
+  background: #fafafa;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding-top: 5%;
+}
+
+/* Left side text – static (no animation) */
+.about-content {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-image {
+  position: relative;
+  display: inline-block;
+   z-index: 0;
+}
+
+/* Decorative border overlay */
+.about-image::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  width: 50%;
+  height: 120%;
+  border-top: 30px solid rgb(82, 77, 77);
+  border-bottom: 30px solid rgb(82, 77, 77);
+  border-left: 30px solid rgb(82, 77, 77);
+  z-index: 2; /* sits above image */
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+/* Image styling */
+.about-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: 0 8px 55px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+  animation: slideInLeft 1s ease forwards;
+}
+
+/* Optional hover animation for a dynamic look */
+.about-image:hover::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: 5%;
+  width: 90%;
+  height: 120%;
+  border-top: 30px solid rgb(82, 77, 77);
+  border-bottom: 30px solid rgb(82, 77, 77);
+  border-right: 30px solid rgb(82, 77, 77);
+  z-index: 2; /* sits above image */
+}
+
+.about-title{
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 10px;
+  margin:0 0 15% 0;
+  color: rgb(46, 45, 45);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 2%;
+  display: inline-block; 
+}
+.about-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* ✅ starts from the left */
+  width: 60px; /* underline length */
+  height: 3px; /* underline thickness */
+  background-color: rgb(46, 45, 45); /* or any color you prefer */
+  border-radius: 2px;
+}
+
+.about-text {
+  font-style: italic;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color:#333;
+}
+
+/* Button */
+.about-btn {
+  border: 1px solid black;
+  background-color: #fff;
+  letter-spacing: 6px;
+  margin: 2% 0 0 0;
+  padding: 12px 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: lighter;
+  transition: 0.3s;
+  width: 270px;
+}
+
+.about-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(74, 53, 49, 0.3);
+}
+
+/* Animation */
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*----------------------------sevice----------------------*/
+.service-title{
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 10px;
+  margin:0 0 5% 5%;
+  color: rgb(46, 45, 45);
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 2%;
+  display: inline-block;
+}
+.service-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* ✅ starts from the left */
+  width: 60px; /* underline length */
+  height: 3px; /* underline thickness */
+  background-color: rgb(46, 45, 45); /* or any color you prefer */
+  border-radius: 2px;
+}
+.service {
+  background: #fafafa;
+  padding: 4% 10%;
+}
+
+/* ================================================================ */
+/*=========================== Gallery =============================*/
+/* ================================================================= */
+
+.gallery-sec1 {
+  padding: 5%  10% 5% 10%;
+}
+.gallery-header {
+  display: flex;
+  background-color: #f7f7f7;
+  align-items: center;
+  justify-content:space-evenly; /* pushes left, center, right */
+  padding: 10% 5% 6%;
+  position: relative;
+}
+
+/* Center title */
+.gall-title {
+  text-align: center;
+}
+
+.gall-title p {
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 8px;
+  color:#333;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Underline centered under title */
+.gall-title p::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+/* Nav button containers (left/right) */
+.gall-nav-btn {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gall-nav-btn .left,.gall-nav-btn .right{
+  padding: 1%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 2% 0 0 0;
+  background-color: #f7f7f7;
+}
+.gall-nav-btn .left:hover,.gall-nav-btn .right:hover{
+  color: black;
+  background-color: #f7f7f7;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .gallery-header {
+    padding: 10% 3% 4%;
+  }
+
+  .gall-title p {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .nav-btn {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+}
+
+
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🎨 Image styles */
+.grid-wrapper img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  filter: brightness(0.65);
+}
+
+.grid-wrapper img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  filter: brightness(1);
+}
+
+/* ===================================== */
+/* 🌟 MAKE EVERY 7th IMAGE FULL WIDTH */
+/* ===================================== */
+/*
+Pattern explanation:
+- We have 6 normal images (2 rows × 3 images)
+- Then the 7th image becomes the large, full-width one.
+*/
+.grid-wrapper > div:nth-child(7n) {
+  grid-column: span 3;
+}
+
+.grid-wrapper > div:nth-child(7n) img {
+  height: 800px;
+  object-fit: cover;
+}
+
+/* ===================================== */
+/* 📱 RESPONSIVE DESIGN */
+/* ===================================== */
+
+/* 💻 Large screens (≥1200px): 3 per row */
+@media (min-width: 1200px) {
+  .grid-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* 📱 Tablets (≥768px and <1200px): 2 per row */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-wrapper > div:nth-child(7n) {
+    grid-column: span 2;
+  }
+  .grid-wrapper img {
+    height: 280px;
+  }
+  .gall-title p {
+  font-size: 2rem;
+   padding-top: 20%;
+   padding-bottom: 2%;
+   margin-bottom: 10%;
+  }
+  .gall-nav-btn .left,.gall-nav-btn .right{
+    margin-top: 4%;
+  }
+  .gallery-sec1{
+    padding-bottom: 10%;
+  }
+}
+
+/* 📲 Mobiles (<768px): 1 per row */
+@media (max-width: 767px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-wrapper > div:nth-child(7n) {
+    grid-column: span 1;
+  }
+
+  .grid-wrapper img {
+    height: 250px;
+  }
+
+   .gall-title p {
+   padding-top: 30%;
+  }
+  .gall-nav-btn .left,.gall-nav-btn .right{
+    margin-top: 8%;
+  }
+}
+
+
+
+
+/* =====================================================================*/
+/*============================== Contact ========================*/
+/* ====================================================================== */
+
+.contact_sec1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  align-items: center;
+  min-height: 100vh;
+  padding: 8% 8%;
+  gap: 50px;
+}
+.contact-info{
+  color: #333;
+  padding: 5% 0 0 0;
+}
+.contact-info .contact-item{
+  padding: 0 0 6% 0;
+  font-size: 1.5rem;
+  font-weight: 50;
+}
+.contact-item span{
+  padding: 0 0 0 3%;
+}
+.contact-item a{
+  padding-right: 10%;
+  color: #333;
+}
+.contact-item a:hover{
+  color: #333;
+}
+.contact-item p{
+  padding: 10% 0 5% 0;
+  letter-spacing: 5px;
+} 
+/* Right side - Google Form */
+.stories {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.iframe-wrapper {
+  max-width: 700px;
+  height: 600px;  
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgba(13, 13, 13, 0.1);
+}
+.iframe-wrapper iframe {
+  max-width:  700px;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+.intro-section {
+  flex: 1;
+  color:#131414;
+  max-width: 700px;
+  animation: slideLeft 1s ease-out;
+  padding: 5% 0 0 0;
+}
+.text-box {
+  max-width: 600px;
+}
+.text-box h1 {
+  margin: 0 0 12% 0;
+  position: relative;
+  padding-bottom: 15px;
+  display: inline-block; 
+  text-transform: uppercase;
+}
+.text-box h1::after{
+ content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* ✅ starts from the left */
+  width: 60px; /* underline length */
+  height: 3px; /* underline thickness */
+  background-color: rgb(46, 45, 45); /* or any color you prefer */
+  border-radius: 2px;
+}
+
+.slide-in {
+  color: #333;
+  opacity: 0;
+  transform: translateX(-100px) scale(0.9);
+  animation: slideZoomIn 1.2s ease-out forwards;
+}
+.slide-in:nth-child(1) {
+  animation-delay: 0.3s;
+  font-size: 5rem;
+  font-weight: 100;
+  letter-spacing: 10px;
+}
+
+.slide-in:nth-child(2) {
+  animation-delay: 0.6s;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 50;
+  letter-spacing: 1px;
+}
+
+/* Animation keyframes */
+@keyframes slideZoomIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* ==================================================================== */
+/* ============================ story part =============================*/
+/* ==================================================================== */
+
+.story_sec1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 8%;
+  gap: 50px;
+}
+.story-content {
+  flex: 1;
+  color:#131414;
+  max-width: 700px;
+  animation: slideLeft 1s ease-out;
+  padding-left: 1%;
+}
+.story-content h1 {
+  font-size: 5rem; 
+  letter-spacing: 5px;
+  margin: 0 0 10% 0;
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  display: inline-block; 
+}
+.text-box h1::after,.story-content h1::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0; /* ✅ starts from the left */
+  width: 60px; /* underline length */
+  height: 3px; /* underline thickness */
+  background-color: rgb(46, 45, 45); /* or any color you prefer */
+  border-radius: 2px;
+}
+
+.story-content p {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 50;
+  letter-spacing: 1px;
+  padding-bottom: 3%;
+}
+.gallery-btn {
+  border: 1px solid black;
+  background-color: #fff;
+  letter-spacing: 6px;
+  margin: 2% 0 0 0;
+  padding: 12px 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: lighter;
+  transition: 0.3s;
+  width: 200px;
+}
+.gallery-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(74, 53, 49, 0.3);
+}
+.iphone-frame {
+  position: relative;
+  width: 600px;
+  height: 900px;
+  border: 3px solid #333;
+  border-radius: 40px;
+  padding: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  animation: slideRight 1s ease-out;
+  margin: 10% 5% 5% 0;
+}
+
+.iphone-notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 25px;
+  background: #000;
+  border-radius: 25px;
+}
+
+.iphone-screen {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.iphone-home {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #555;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*================ media query =================*/
+
+.modify{
+    display: none;
+}
+
+
+
+/* ================ media query 990 =========================== */
+@media (max-width: 990px) {
+
+
+/* ============ index part ========= */
+/* ---------------------proct1-------------------- */
+.common-cols2 h1,.cols2 h1{
+   font-size: 1.8rem;
+}
+
+/* ----------------------section proct3--------------- */
+.image img{
+   height: 400px;
+}
+.passage h4{
+    font-size:1.1rem;
+    line-height: 2rem;
+}
+
+.passage h6{
+    font-size:3.5rem;
+}
+
+/* -----------------------proct3(1)------------------- */
+.proct3 .carousel{
+    padding: 10px 0px;
+}
+  .couplestatus{
+    padding: 5% 0 3% 0;
+  }
+.couplestatus{
+  font-optical-sizing: auto;
+}
+.couplestatus h3{
+  font-size: 1.5rem;
+  letter-spacing:5px;
+}
+.couplestatus h1{
+  font-size: 2rem ;
+  letter-spacing:5px;
+  padding-bottom: 2% !important;
+}
+
+
+/* -------------------section proct4------------------- */
+.proct4 {
+    height: 400px;
+  }
+  .qoutes-title{
+    padding-right: 0;
+  }
+
+  .qoutes-title h1 {
+    font-size: 1.8rem;
+  } 
+
+  .qoutes-title h2 {
+   font-size: 1.2rem;
+   margin: 0;
+  }
+
+/* -------------------recent-gallery---------------- */
+.recent-footer {
+    padding: 10px 10px;
+    font-size: 0.70rem;
+    width: 150px;
+  }
+  .recent-gallery p {
+    font-size: 2rem;
+    margin: 10% 0 8% 0;
+    letter-spacing: 2px;
+  } 
+  .about-title::after,.service-title::after,.recent-gallery p::after,.couplestatus h1::after,.text-box h1::after,.story-content h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; /* underline starts from left */
+    width: 30px; /* underline length */
+    height: 1px; /* underline thickness */
+    background-color:#333;
+    border-radius: 2px;
+  }
+
+/* ------------------site-footer------------------- */
+.footer-titles{
+  margin-left: 5%;
+}
+.footer-title1 h1{
+  font-size: 1.5rem;
+}
+.footer-title2 h2{
+  font-size: 2rem;
+}
+.footer-container{
+  padding-left: 5%;
+  gap: 50px;
+}
+
+/* ======================= About =========================== */
+.about-title,.service-title{
+    font-size: 2rem;
+     letter-spacing: 5px;
+    margin-bottom: 10%;
+}
+.about-text {
+    font-size: 1.2rem;
+    font-weight: 300 ;
+  }
+  .about-image img{
+    height: 400px;
+  }
+  .about-image{
+    margin-top: 4%;
+  }
+   .about-btn {
+    margin-top: 10px;
+    font-size: 0.70rem;
+    width: 200px;
+    padding: 12px 0;
+  }
+  /*-----------------------service----------------------------  */
+   .service {
+    padding: 6% 5%;
+  }
+
+/* ======================= Contact and Stories =========================== */
+.contact-info .contact-item{
+  padding: 0 0 2% 0;
+}
+.intro-section{
+    margin: 0;
+    padding: 15% 0 5% 0;
+}
+ .story_sec1,.contact_sec1{
+   padding-top: 10%;
+   padding-bottom: 5%;
+ }
+   .story-content h1,.slide-in:nth-child(1){
+    font-size: 2rem;
+  }
+  .slide-in:nth-child(2),.contact-item p{
+    font-size: 1.2rem;
+
+  }
+
+  .story-content p,.contact-item span,i{
+    font-size: 1rem;
+    
+  }
+
+  .gallery-btn {
+    width: 150px;
+    font-size: 0.70rem;
+    padding: 10px 12px;
+  }
+
+  .iphone-frame {
+    width: 400px;
+    height: 600px;
+    margin: 100px 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+/*================ index part(768) ============= */
+/* ------------------proct1---------------- */  
+
+      .modify{
+        display: block;
+      }
+      .proct1 {
+        display: none;
+      }
+      .common-droct1 > .common-cols1 > .menudisappear{
+        display: none;
+      }
+
+.common-cols2 h1,.cols2 h1{
+   font-size: 2rem;
+}
+.modify {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* ensures carousel stays below */
+}
+
+.drocty1 {
+  display: flex;
+  justify-content: center; /* centers the whole top section */
+  width: 100%;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2); /* transparent black overlay */
+  backdrop-filter: blur(5px);
+}
+
+.cols1 {
+  position: absolute;
+  left: 40px; /* keep menu icon on left */
+}
+
+.cols2 {
+  text-align: center;
+}
+
+.heading1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.sidemenu i {
+  font-size: 15px;
+  font-weight:600;
+}
+
+.carousel {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: auto; /* pushes carousel to bottom */
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item .photo,
+.carousel-item .photo1,
+.carousel-item .photo2,
+.carousel-item .photo3 {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item .carousel-caption {
+  position: absolute;
+  bottom: 0; /* Stick to the bottom edge */
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center; /* optional transparent background */
+  color: #fff;
+  padding:20px 20px 100px 20px;
+  margin: 0;
+}
+
+.carousel-caption h5,
+.carousel-caption h3 {
+  margin: 0;
+  line-height: 1.4;
+}
+  .photo{
+    background-image: url("/images/img1.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .photo1{
+    background-image: url("/images/img2.jpg");
+    background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    height: 100vh;
+  }
+  .photo2{
+    background-image: url("/images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .photo3{
+    background-image: url("/images/img4.jpg");
+    background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    height: 100vh;
+  }
+  
+  /* hash title */
+  .info1{
+    line-height: 0.5rem;
+    padding:0 20px 10px 20px;
+    font-size: 1.3rem;
+  }
+  .info2{
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    padding: 0 20px 10px 20px;
+    font-size:1.8 rem;
+  }
+ 
+/*-----------------section proct2---------------*/
+  
+  
+  .proct2 h2{
+    font-size:1.8rem ;
+    letter-spacing: 5px;
+  }
+  .proct2 h5{
+    font-size:1.1rem;
+  }
+
+/*-------------------section proct3-----------------*/
+
+.image img{
+   height: 400px;
+}
+.passage h4{
+    font-size:1.2rem;
+}
+
+
+/*------------------proct3(1)------------------*/
+
+/*---------------------section  proct4-------------------*/
+   
+ .proct4 {
+    height: 500px;
+     clip-path: ellipse(100% 100% at 50% 0%);
+  }
+
+  .qoutes-title h1 {
+    font-size: 1.5rem;
+  } 
+
+  .qoutes-title h2 {
+   font-size: 1rem;
+  }
+
+/*-------------------recent gallery--------------------*/
+
+  
+
+  .home-btn{
+    margin-bottom: 5%;
+  }
+
+  /*------------------meet the team----------------*/
+  /*----------------------site footer------------------*/
+  
+  .footer-container {
+    grid-template-columns: 1fr !important;
+    gap: 80px;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center !important;
+  }
+
+  .footer-titles {
+    text-align: center;
+  }
+  .footer-title1 h1 {
+   font-size: 1.5rem;
+}
+
+
+/* ====================ABOUT============== */
+/* -------------about------------ */
+.about-section{
+   padding: 150px 8% 100px 8%;
+}
+  .about-container {
+    flex-direction: column; /* stack content */
+    text-align: center;
+  }
+
+  .about-content {
+    order: 1; /* text first */
+  }
+
+  .about-image {
+    order: 2;/* image second */
+    margin-top: 4%;
+  }
+  .about-image img{
+    height: 350px;
+  }
+
+  .about-btn {
+    margin-top: 10px;
+    font-size: 15px;
+    width: 230px;
+    padding: 12px 0;
+  }
+
+/* -------------sevice---------- */
+ .service {
+   text-align: center;
+  }
+
+/*========================  gallery ================*/
+ 
+
+/*====================== contact and Stories =================*/
+.contact_sec1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-item a{
+    padding: 0 5% 0 0;
+  }
+  .story-content h1,.slide-in:nth-child(1){
+    font-size: 2rem;
+  }
+ .story-content p,.slide-in:nth-child(2),.contact-item p{
+    font-size: 1.3rem;
+  }
+  .contact-item span,i{
+    font-size: 1rem;
+  }
+  .text-box h1{
+    margin: 0 0 5% 0;
+  }
+  .contact-item p{
+    margin-bottom: 0;
+  }
+  
+
+  .story_sec1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15% 0 10% 0;
+  }
+
+  .story-content {
+    max-width: 100%;
+    padding: 10% 5% 5% 5%;
+  }
+
+  .iphone-frame {
+    width: 500px ;
+    height: 700px ;
+    margin: 0;
+  }
+  .story-content h1::after,.about-title::after,.service-title::after,.gall-title p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;                /* start from the center */
+    transform: translateX(-50%); /* move underline to exact center */
+    width: 40px;              /* underline length */
+    height: 1px;              /* underline thickness */
+    background-color:black; /* underline color */
+    border-radius: 2px;
+  }
+
+  .iphone-notch{
+   width: 100px;
+   margin-top: 5px;
+  }
+  .iphone-home{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+.gallery-btn{
+  font-size: 15px;
+  width: 190px;
+    padding: 12px 0;
+}
+}
+
+/* ================ media query 576 ============= */
+/* ================ index part ================== */
+
+@media (max-width: 576px){
+
+
+.common-cols2 h1,.cols2 h1{
+   font-size: 1.5rem;
+}
+
+/* ----------------proct1-------------------- */
+  .carousel-item .carousel-caption {
+    padding:0px 30px 100px 30px;
+  }
+  .cols1{
+    padding-bottom: 0;
+  }
+  .common-cols1{
+    padding-top: 1%;
+  }
+  .info1 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+
+  .info2 {
+    font-size: 1.5rem;
+  }
+
+  /*-----------------section proct2---------------*/ 
+  
+  .proct2 h2{
+      font-size: 1.8rem;
+  }
+  .proct2 h5{
+    font-size: 1rem;
+  }
+  
+ /*-------------------section proct3-----------------*/
+.image img{
+   height: 350px ;
+ }
+ .passage h6{
+    font-size: 3rem;
+    letter-spacing: 2px;
+ }
+
+
+  /* ----------------proct3(1)------------------- */
+
+  .couplestatus h1{
+     font-size: 1.3rem;
+  }
+  .couplestatus h3{
+    font-size: 1.3rem;
+  }
+
+  /* -------------------prcot4---------------------- */
+   .proct4 {
+    height: 350px;
+    padding: 2%;
+  }
+  .qoutes-title{
+    padding-bottom: 10%;
+  }
+  .qoutes-title h1 {
+    font-size: 1.2rem;
+  }
+  .qoutes-title h2 {
+    font-size: 1rem;
+  }
+
+  /* --------------------recent gallery---------------- */
+  .recent-gallery p {
+    font-size: 1.8rem;
+  }
+
+  .recent-footer,.about-btn,.gallery-btn {
+    letter-spacing: 2px;
+    width: 150px;
+    padding: 8px 8px;
+    font-size: 0.75rem;
+  }
+
+  /* --------------------site footer---------------------- */
+  .footer-title1 h1 {
+    font-size: 1rem;
+  }
+  .footer-title2 h2{
+    font-size: 1.3rem;
+  }
+ 
+/*================= About ==================== */
+  .about-title,.service-title{
+    font-size: 1.5rem;
+     letter-spacing: 5px;
+    margin-bottom: 10%;
+  }
+  .about-text {
+    font-size: 1.2rem;
+    font-weight: 300 ;
+  }
+
+/* ================== Gallery ================== */
+.gallery-header{
+  padding-top: 20%;
+  padding-bottom: 10%;
+}
+  .gall-title p {
+  font-size: 1.5rem;
+   padding-top: 30%;
+  }
+  .gall-nav-btn .left,.gall-nav-btn .right{
+    margin-top: 10%;
+  }
+
+ /* ================= Contact and Story =============== */
+
+  .iphone-frame {
+    width: 400px ;
+    height: 600px ;
+    margin: 0;
+  }
+  .text-box h1{
+    margin-bottom: 10%;
+    padding-bottom: 2%;
+  }
+  .intro-section{
+    padding-top: 20%;
+  }
+  .story-content h1,.slide-in:nth-child(1){
+    font-size: 1.5rem;
+  }
+ .story-content p,.slide-in:nth-child(2),.contact-item p{
+    font-size: 1.2rem;
+  }
+  .contact-item span,i{
+    font-size: 0.95rem;
+  }
+
+}
+/* ========================== media query 450 ==================== */
+/* ========================== index part ========================== */
+@media (max-width: 450px) {
+
+.common-cols2 h1,.cols2 h1{
+   font-size: 1.3rem;
+}
+.common-cols1{
+    padding-top: 0;
+  }
+.sidemenu i{
+  font-size: 0.8rem;
+}
+.cols1{
+    padding: 0;
+}
+.carousel-item .carousel-caption{
+  padding-bottom:10%;
+}
+
+/* ---------------------------proct1--------------------------- */
+  .info1 {
+    font-size: 0.9rem;
+  }
+
+  .info2 {
+    font-size: 1.2rem;
+  }
+
+/*-----------------------------proct 2-------------------------- */
+
+.proct2 h2{
+      font-size: 1.2rem;
+}
+ .proct2 h5 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /*-------------------------proct3--------------------------  */
+  .passage h6{
+    font-size:2.5rem;
+}
+
+
+
+/* ---------------------------proct3(1)--------------------------- */
+.image img{
+   height: 300px;
+}
+ .proct3-1 .couplestatus h1 {
+   font-size: 1.2rem;
+  }
+  .proct3-1 .couplestatus h3 {
+    font-size: 1rem;
+  }
+  /* ------------------------proct4--------------------------- */
+  .proct4 {
+    height: 300px;
+  }
+
+/* ---------------------------recent--------------------------- */
+.recent-gallery p {
+    font-size: 1.2rem;
+  }
+  
+  /*--------------------------site-footer---------------------- */
+  .footer-title2 h2 {
+    font-size: 1.2rem;
+  }
+  .social-icons a {
+    font-size: 1rem;
+  }
+
+/* =========================== about ============================ */
+  .about-image img{
+    height: 300px !important;
+  }
+.about-image::before {
+  width: 50%;
+  height: 120%;
+  border-top: 20px solid rgb(82, 77, 77);
+  border-bottom: 20px solid rgb(82, 77, 77);
+  border-left: 20px solid rgb(82, 77, 77);
+}
+.about-image:hover::before {
+  width: 90%;
+  height: 120%;
+  border-top: 20px solid rgb(82, 77, 77);
+  border-bottom:20px solid rgb(82, 77, 77);
+  border-right: 20px solid rgb(82, 77, 77);
+}
+
+  
+  
+/* ---------------------------meety the team--------------------- */ 
+
+
+  /* --------------------------contact and stories---------------- */
+  .story_sec1{
+    padding-top: 25%;
+  }
+  .contact_sec1{
+    padding-bottom: 10%;
+  }
+  .intro-section{
+    padding-top: 25%;
+  }
+  .story-content h1,.slide-in:nth-child(1){
+    font-size: 1.5rem;
+  }
+ .story-content p,.slide-in:nth-child(2),.contact-item p{
+    font-size: 1rem;
+  }
+  .contact-item span,i{
+    font-size: 0.95rem;
+  }
+  .iphone-frame {
+    width: 350px ;
+    height: 500px ;
+    margin: 0;
+  }
+
+  /* ================= gallery ====================== */
+
+  .gall-nav-btn .left,.gall-nav-btn .right{
+    margin-top: 12%;
+  }
+}
+
