@@ -392,7 +392,7 @@ display: inline-block;
 /*----------------------------------------recent----------------------------*/
 .recent-gallery1 {
   border: 20px solid wheat;
-  background-color: darkgray;
+  background-color: rgb(56, 54, 54);
   border-radius: 0 ;
   padding-bottom: 2%;
   transform-origin: center;
@@ -425,7 +425,7 @@ display: inline-block;
   align-items: center;
 }
 .recent-footer {
-  background-color: darkgray;
+  background-color: rgb(56, 54, 54);
   color:wheat;
   font-size: 1.2rem;
   font-weight: 500;
