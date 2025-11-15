@@ -216,7 +216,7 @@ text-decoration: none;
 }
 @keyframes change{
    0% {
-    background-image: url("/images/img7.jpg");
+        background-image: url("../images/img7.jpg");
     }
     20%{
         background-image: url("../images/img8.jpg"); 
@@ -297,7 +297,6 @@ text-decoration: none;
 }
 
 .passage h4 {
-  color: rgb(46, 45, 45);
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 50;
@@ -305,7 +304,6 @@ text-decoration: none;
 }
 
 .passage h6 {
-  color: rgb(46, 45, 45);
   margin-top: 8px;
   font-size: 4rem;
   font-weight: 50;
@@ -1449,28 +1447,28 @@ Pattern explanation:
   line-height: 1.4;
 }
   .photo{
-    background-image: url("/images/img1.jpeg");
+    background-image: url("../images/img1.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     height: 100vh;
   }
   .photo1{
-    background-image: url("/images/img2.jpg");
+    background-image: url("../images/img2.jpg");
     background-repeat: no-repeat;
       background-size:cover;
       background-position: center;
     height: 100vh;
   }
   .photo2{
-    background-image: url("/images/img3.jpg");
+    background-image: url("../images/img3.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     height: 100vh;
   }
   .photo3{
-    background-image: url("/images/img4.jpg");
+    background-image: url("../images/img4.jpg");
     background-repeat: no-repeat;
       background-size:cover;
       background-position: center;
